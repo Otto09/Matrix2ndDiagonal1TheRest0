@@ -11,7 +11,7 @@ int main()
 
     cout << "n = "; cin >> n;
 
-    //  Initializez matricea unitate
+    //  initialize the unity array
     unitate(a, n);
 
     for (i = 0; i < n; i++)
@@ -29,7 +29,7 @@ void unitate(double a[][10], int n)
 
     for (i = 0; i < n; i++)
         for (j = 0; j < n; j++)
-            if ( i + j == n - 1 )// elem. e pe diag. sec.
+            if ( i + j == n - 1 )// the element is on the secondary diagonal
                 a[i][j] = 1.0;
             else
                 a[i][j] = 0.0;
